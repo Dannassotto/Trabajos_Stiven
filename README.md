@@ -13,7 +13,8 @@ WHERE film.film_id = category.category_id;
 SELECT actor.first_name, actor.last_name, film.title
 FROM actor
 JOIN film_actor ON actor.actor_id = film_actor.actor_id
-JOIN film ON film_actor.film_id = film.film_id;
+JOIN film ON film_actor.film_id = film.film_id
+LIMIT 20;
 
 
 SELECT customer.first_name, customer.last_name, film.title
